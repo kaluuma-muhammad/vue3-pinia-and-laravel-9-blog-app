@@ -38,3 +38,8 @@ php artisan migrate
 php artisan passport:install
 php artisan serve
 ```
+
+# Conclusion
+After installing all the project dependecies now run your frontend in the browser,  
+Signup and proceed to the blog system.  
+Now you can view available blogs, add, edit, and delete a blog.
