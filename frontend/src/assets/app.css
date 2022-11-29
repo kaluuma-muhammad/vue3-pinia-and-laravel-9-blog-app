@@ -1,0 +1,211 @@
+body {
+	background: #f2f2f2;
+	color: #444;
+	margin: 0;
+}
+
+body * {
+	font-family: "Poppins";
+}
+
+.container {
+    margin: 10px auto;
+	position: center;
+	width: 95%;
+    justify-content: center;
+	align-items: center;
+}
+
+/* header */
+header {
+	text-align: center;
+	background: #e7e7e7;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2em;
+	margin-left: 15px;
+	color: #777;
+}
+
+span {
+	font-size: 12px;
+}
+
+.danger {
+	color: red;
+}
+
+.nav {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+}
+.nav .link {
+    padding: 0.3em 0;
+    color: #212121;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav>.active{
+    text-decoration: underline;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.home button {
+	align-self: center;
+	max-width: 20%;
+	border-radius: 20px;
+	margin-right: 8px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.blogs, .edit-blog, .add-blogs, .home {
+	max-width: 800px;
+	margin: 0 auto;
+	display: grid;
+}
+
+.blogs h3, .edit-blog h3, .add-blogs h3 {
+	text-align: center;
+}
+
+.blogs .blog {
+	grid-template-columns: 1fr 3fr;
+	gap: 10px;
+	padding: 6px 20px;
+	background: #fff;
+	margin-top: 10px;
+	border-radius: 4px;
+	box-shadow: 2px 4px 6px rgba(0,0,0,0.05);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.blog h1 {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.blogs img {
+	margin: 5px;
+	max-height: 250px;
+	max-width: 200px;
+	border-radius: 5%;
+}
+
+.blog-action {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.blog-action .action {
+	text-align: right;
+}
+
+.action button {
+	border-radius: 20px;
+	margin-right: 8px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+form {
+	max-width: 400px;
+	margin: 0 auto;
+	display: grid;
+}
+
+form .form-image {
+	margin-top: 5px;
+	display: grid;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 10px;
+}
+
+form button {
+	margin-top: 10px;
+	border-radius: 20px;
+	border: 1px solid #47a805;
+	background-color: #47a805;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+}
+
+form input {
+	margin-top: 5px;
+	border: 0;
+	padding: 10px;
+	border-radius: 6px;
+	color: #555;
+	font-size: 1em;
+}
+
+form textarea {
+	height: 150px;
+	margin-top: 5px;
+	border: 0;
+	padding: 10px;
+	border-radius: 6px;
+	color: #555;
+	font-size: 1em;
+}
+
+/* loading state */
+.loading {
+	max-width: 640px;
+	border: 1px solid #ffd859;
+	background: #ffe9a0;
+	color: #3a3a3a;
+	padding: 5px 0;
+	text-align: center;
+	margin: 30px auto;
+}
+
+#preview {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#preview img {
+	max-width: 50%;
+	max-height: 50px;
+	border-radius: 50%;
+}

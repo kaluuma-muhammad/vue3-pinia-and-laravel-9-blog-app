@@ -1,0 +1,24 @@
+{
+  "name": "pinia-auth",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "jquery": "^3.6.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.23",
+    "pinia-extract": "^1.1.2",
+    "pinia-plugin-persistedstate": "^2.4.0",
+    "secure-ls": "^1.2.6",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.2",
+    "vite": "^3.1.8"
+  }
+}
