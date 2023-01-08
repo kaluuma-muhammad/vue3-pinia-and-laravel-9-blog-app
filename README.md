@@ -20,12 +20,7 @@ npm run dev
 That's all you need for the frontend
 
 # Backend
-###### Recommendations
-I'd highly recommend you to upgrade to  
-1- PHP 8.0.10 or higher  
-2- phpMyAdmin ^5.1.1 or higher  
-
-Now navigate to the backend directory and open the command terminal and run
+Navigate to the backend directory and open the command terminal and run
 
 ```
 composer update
