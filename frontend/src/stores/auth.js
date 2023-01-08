@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
 import router from '@/router'
+import { useToast } from 'vue-toastification'
+const toast = useToast()
 
 export const useAuthStore = defineStore('auth', {
 	state: () => ({
@@ -31,10 +33,11 @@ export const useAuthStore = defineStore('auth', {
                     resolve()
                 })
                 .catch(error=> {
+                    toast.error('You have an error')
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }
@@ -61,7 +64,7 @@ export const useAuthStore = defineStore('auth', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }
@@ -87,7 +90,7 @@ export const useAuthStore = defineStore('auth', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }

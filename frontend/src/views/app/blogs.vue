@@ -36,7 +36,9 @@
     }
 
     const delete_blog_post = (id) => {
-        delete_blog(id)
+        delete_blog(id).then(() => {
+            get_blogs()
+        })
     }
 
 	// fetch blogs

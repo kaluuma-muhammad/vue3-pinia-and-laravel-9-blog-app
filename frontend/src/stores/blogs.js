@@ -1,5 +1,7 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
+import { useToast } from 'vue-toastification'
+const toast = useToast()
 
 export const useBlogsStore = defineStore('blogs', {
 	state: () => ({
@@ -30,7 +32,7 @@ export const useBlogsStore = defineStore('blogs', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }
@@ -54,7 +56,7 @@ export const useBlogsStore = defineStore('blogs', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }
@@ -71,6 +73,8 @@ export const useBlogsStore = defineStore('blogs', {
                     if(response.data.res){
                         this.blogs = response.data.res
                         this.loading = ''
+
+                        toast.success("Post added successfully")
                     }
                     resolve()
                 })
@@ -78,7 +82,7 @@ export const useBlogsStore = defineStore('blogs', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }
@@ -102,7 +106,7 @@ export const useBlogsStore = defineStore('blogs', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }
@@ -119,6 +123,8 @@ export const useBlogsStore = defineStore('blogs', {
                     if(response.data.res){
                         this.blogs = response.data.res
                         this.loading = ''
+
+                        toast.success("Post updated successfully")
                     }
                     resolve()
                 })
@@ -126,7 +132,7 @@ export const useBlogsStore = defineStore('blogs', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }
@@ -150,7 +156,7 @@ export const useBlogsStore = defineStore('blogs', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }
@@ -167,6 +173,8 @@ export const useBlogsStore = defineStore('blogs', {
                     if(response.data.res){
                         this.blogs = response.data.res
                         this.loading = ''
+
+                        toast.success("Post deleted successfully")
                     }
                     resolve()
                 })
@@ -174,7 +182,7 @@ export const useBlogsStore = defineStore('blogs', {
                     if (error.response) {
                         if(error.response.data){
                             if(error.response.data.msg){
-                                console.log(error.response.data.msg)
+                                toast.error(error.response.data.msg)
                             }
                         }
                     }

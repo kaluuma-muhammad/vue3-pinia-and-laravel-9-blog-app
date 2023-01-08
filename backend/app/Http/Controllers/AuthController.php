@@ -89,7 +89,7 @@ class AuthController extends Controller
                 $username = $user->name; 
             }else{
                 return response()->json([
-                    'msg'=> 'An Account with the Name You Entered Does not Exist',
+                    'msg'=> 'Account with contact entered does not exist',
                     'status' => 401
                 ], 401);
             }
@@ -97,7 +97,7 @@ class AuthController extends Controller
            
         if(!Auth::attempt(['name' => $username , 'password' => $request->password])){
             return response()->json([
-                'msg'=> 'Wrong Login Password',
+                'msg'=> 'Either contact cr password is incorrect',
                 'status' => 401
             ], 401);
         }

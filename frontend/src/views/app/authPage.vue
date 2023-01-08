@@ -35,7 +35,7 @@
 						<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 					</div>
 					<span>or use your account</span>
-					<input v-model="sighInForm.contact" type="contact" placeholder="Email" />
+					<input v-model="sighInForm.contact" type="contact" placeholder="Contact" />
 					<span class="text-danger" v-if="sighInFormError.contact">{{ sighInFormError.contact }}</span>
 
 					<input v-model="sighInForm.password" type="password" placeholder="Password" />
