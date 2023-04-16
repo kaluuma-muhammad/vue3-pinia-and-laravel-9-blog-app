@@ -65,7 +65,6 @@
 
 <script setup>
 	import '@/assets/auth.css'
-	import $ from 'jquery'
 	import { reactive  } from 'vue';
 	import { useAuthStore } from '../../stores/auth'
 	
